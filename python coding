@@ -1,0 +1,128 @@
+-->COMMENTS.
+# This is a comment. Comments provide explanations in the code.
+# They have no impact on the code itself.
+
+-->VARIABLES.
+# Variables store data.
+example_variable = 42  # Integer value 42 is stored in example_variable.
+print(example_variable)  # Output: 42
+
+-->DATA TYPES.
+# Python has some basic data types: int, float, str.
+integer_variable = 10  # Integer data type
+float_variable = 3.14  # Float data type
+string_variable = "Hello, Python!"  # String data type
+print(integer_variable)  # Output: 10
+print(float_variable)    # Output: 3.14
+print(string_variable)   # Output: Hello, Python!
+
+-->PRINT STATEMENT.
+# The print statement is used to display output.
+print("Hello, World!")  # Output: Hello, World!
+
+
+-->INDENTATION.
+# Indentation is used to define the structure of the code.
+if integer_variable > 5:
+    print("Integer is greater than 5")
+else:
+    print("Integer is not greater than 5")
+
+-->LIST.
+# Lists are ordered collections.
+my_list = [1, 2, 3, "Python"]
+print(my_list)  # Output: [1, 2, 3, 'Python']
+
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Accessing elements
+print("Original List:", my_list)
+print("First element:", my_list[0])
+print("Last element:", my_list[-1])
+print("Slicing:", my_list[1:4])
+
+# Modifying elements
+my_list[2] = 10
+print("Modified List:", my_list)
+
+# Adding elements
+my_list.append(6)
+print("After Append:", my_list)
+
+my_list.extend([7, 8, 9])
+print("After Extend:", my_list)
+
+# Inserting at a specific index
+my_list.insert(2, 20)
+print("After Insert:", my_list)
+
+# Removing elements
+my_list.remove(4)
+print("After Remove:", my_list)
+
+popped_element = my_list.pop()
+print("Popped Element:", popped_element)
+print("After Pop:", my_list)
+
+# Finding elements
+index_of_5 = my_list.index(5)
+print("Index of 5:", index_of_5)
+
+# Check if an element is in the list
+is_present = 3 in my_list
+print("Is 3 present?", is_present)
+
+# Sorting
+my_list.sort()
+print("Sorted List:", my_list)
+
+# Reversing
+my_list.reverse()
+print("Reversed List:", my_list)
+
+# Length of the list
+length = len(my_list)
+print("Length of List:", length)
+
+# Copying a list
+copied_list = my_list.copy()
+print("Copied List:", copied_list)
+
+-->LOOPS.
+# For loop is used for iteration.
+for item in my_list:
+    print(item)
+# Output:
+# 1
+# 2
+# 3
+# Python
+
+-->FUNCTIONS.
+# Functions are reusable blocks of code.
+def greet(name):
+    print("Hello, " + name + "!")
+greet("User")  # Output: Hello, User!
+
+-->LIST COMPREHENSION.
+# Example: Creating a list of squares from 1 to 5 using list comprehension
+squares = [num**2 for num in range(1, 6)]
+print(squares)  # Output: [1, 4, 9, 16, 25]
+
+-->WHILE LOOP.
+# Example: Using a while loop to print numbers from 1 to 5
+counter = 1
+while counter <= 5:
+    print(counter)
+    counter += 1
+
+-->PALINDROME FINDER.
+# Palindrome number example
+number = 121
+original_number = str(number)
+# Check if the original number is equal to its reverse
+if original_number == original_number[::-1]:
+    print(original_number ,"is a palindrome number.")
+else:
+    print(original_number," is not a palindrome number.")
